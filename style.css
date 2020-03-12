@@ -1,0 +1,123 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #06181f;
+}
+.container{
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .icon{
+    width: 200px;
+}
+.container .icon path{
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #31e8ff;
+}
+.container .icon.star path{
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 0;
+}
+.container .icon.star:hover path{
+    animation: animate-star 4s linear forwards;
+}
+@keyframes animate-star{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1560;
+    }
+    80%{
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3120;
+        fill: #31e8ff;
+        
+    }
+}
+.container .icon.sunny path{
+    stroke-dasharray: 2100;
+    stroke-dashoffset: 0;
+}
+.container .icon.sunny:hover path{
+    animation: animate-sunny 3s linear forwards;
+}
+@keyframes animate-sunny{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 2100;
+    }
+    80%{
+        stroke-dashoffset: 4200;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 4200;
+        fill: #31e8ff;
+        
+    }
+}
+.container .icon.star path{
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 0;
+}
+.container .icon.star:hover path{
+    animation: animate-star 4s linear forwards;
+}
+@keyframes animate-star{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1560;
+    }
+    80%{
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3120;
+        fill: #31e8ff;
+        
+    }
+}
+.container .icon.moon path{
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 0;
+}
+.container .icon.moon:hover path{
+    animation: animate-moon 3s linear forwards;
+}
+@keyframes animate-moon{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1200;
+    }
+    80%{
+        stroke-dashoffset: 2400;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 2400;
+        fill: #31e8ff;
+        
+    }
+}
